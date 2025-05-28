@@ -1,7 +1,9 @@
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <div>
-      <p className='text-red-500'>HIIII</p>
+      <Hero />
     </div>
   )
 }

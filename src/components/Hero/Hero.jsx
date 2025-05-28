@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="
       h-[854px] w-full
       bg-hero bg-right bg-cover bg-no-repeat
-      text-white pt-[225px] pb-[254px] relative mb-12
+      text-white pt-[225px] pb-[254px] relative mb-20
       lg:bg-center lg:mb-28
     ">
       <div className="container mx-auto text-center">
@@ -28,7 +28,7 @@ const Hero = () => {
         </h2>
         <button className="
           bg-white/40
-          px-[35px] py-[9px] mb-[160px] text-xl
+          px-[35px] py-[9px] mb-[120px] text-xl
           rounded-md backdrop-blur-md
           hover:bg-white/50
           transition lg:px-[80px] lg:py-[16px] lg:mb-[194px]

@@ -36,13 +36,12 @@
     body {
         @apply bg-gray-3 font-primary text-base leading-relaxed;
     }
-
-    section {
-        @apply py-[50px] lg:py-[70px];
-    }
 }
 
 @layer components {
+    .section {
+        @apply py-[50px] lg:py-[70px];
+    }
     .title {
         @apply text-2xl lg:text-[40px] leading-tight font-semibold mb-4;
     }

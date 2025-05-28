@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+@theme {
+    /* Breakpoints */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+
+    /* Fonts */
+    --font-primary: 'Saira';
+
+    /* Colors */
+    --color-primary: #23262F;
+    --color-accent: #286F6C;
+    --color-gray: #919297;
+    --color-gray-1: #D9D9D9;
+    --color-gray-2: #E7E9EB;
+    --color-gray-3: #F5F5F5;
+    --color-white: #fff;
+    --color-pink: pink;
+
+    /* Images*/
+    --bg-hero: url('/src/assets/img/hero-bg.png');
+    --bg-newsletter: url('/src/assets/img/newsletter.png');
+
+    /* Shadows */
+    --drop-shadow-primary: 0px 4px 10px rgba(15, 27, 51, 0.05);
+}
+
+@layer base {
+    html, body {
+        @apply p-0 m-0 box-border overflow-x-hidden
+    }
+
+    body {
+        @apply bg-gray-3 font-primary text-base leading-relaxed;
+    }
+}
+
+@layer components {
+    .section {
+        @apply py-[50px] lg:py-[70px];
+    }
+    .title {
+        @apply text-2xl lg:text-[40px] leading-tight font-semibold mb-4;
+    }
+    .subtitle {
+        @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
+    }
+}
+
+@layer utilities {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .bg-hero {
+        background-image: theme(--bg-hero);
+    }
+
+    .bg-newsletter {
+        background-image: theme(--bg-newsletter);
+    }
+}

@@ -21,7 +21,8 @@ Projeto **Landing Page** desenvolvido como um site de móveis. Criado com o intu
 - 💨 **TailwindCSS 4**: Utilizado para estilização com classes utilitárias.
 - 🌊 **Swiper.js**: Biblioteca de sliders/carrosséis responsivos.
 - 🎨 **React Icons**: Para uso de ícones.
-- ⚡ **Vite**: Ferramenta de build rápida e simples.
+- 🌀 React Scroll: Scroll suave entre seções da página.
+- ⚡ **Vite**: Ferramenta de build.
 
 ---
 

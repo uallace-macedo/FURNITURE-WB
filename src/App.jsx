@@ -4,6 +4,7 @@ import NewItems from "./components/NewItems";
 import SecondFeatures from "./components/SecondFeatures";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <SecondFeatures />
       <Products />
       <Testimonials />
+      <Newsletter />
     </div>
   )
 }

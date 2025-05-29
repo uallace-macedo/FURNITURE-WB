@@ -9,7 +9,7 @@ import NavMobile from '../NavMobile';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
-  const [mobileNav, setMobileNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {

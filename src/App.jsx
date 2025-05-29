@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import NewItems from "./components/NewItems";
 import SecondFeatures from "./components/SecondFeatures";
 import Products from "./components/Products";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NewItems />
       <SecondFeatures />
       <Products />
+      <Testimonials />
     </div>
   )
 }

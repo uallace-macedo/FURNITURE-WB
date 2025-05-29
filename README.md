@@ -69,4 +69,4 @@ Projeto **Landing Page** desenvolvido como um site de móveis. Criado com o intu
 ## 📽️ Créditos e Referência
 Este projeto foi inspirado no vídeo/tutorial do canal [Cristian Mihai](https://www.youtube.com/@cristianmihai01), disponível em: [Create A Furniture Website Design Using React JS And Tailwind CSS](https://www.youtube.com/watch?v=5d6ZMzBegCU&list=PLne3gcjQSComhjGil98JmOvhlK010Grpu)
 
-> Todo o crédito pela ideia base do layout vai para o autor original.
+> Mesmo com algumas modificações, todo o crédito pela ideia base do layout vai para o autor original.

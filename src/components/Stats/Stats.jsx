@@ -12,7 +12,7 @@ const Stats = () => {
           <div className="
             min-h-[70px] w-3/6 flex flex-col
             justify-center odd:border-r
-            lg:flex-1 lg:odd:border-r lg:even:border-r lg:even:last:border-none
+            lg:flex-1 lg:border-r lg:last:border-none
           " 
             key={index}
           >

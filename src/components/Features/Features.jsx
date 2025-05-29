@@ -22,7 +22,7 @@ const Features = () => {
               {items.map((item, index) => {
                 const { title, subtitle, icon} = item;
                 return (
-                  <div className='flex mb-6 lg:last:mb-0'>
+                  <div key={index} className='flex mb-6 lg:last:mb-0'>
                     <div className='text-2xl mr-4 lg:text-3xl'>{React.createElement(icon)}</div>
                     <div>
                       <h4 className='text-base lg:text-xl font-semibold mb-3'>{title}</h4>

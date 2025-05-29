@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import NewItems from "./components/NewItems";
 import SecondFeatures from "./components/SecondFeatures";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Features />
       <NewItems />
       <SecondFeatures />
+      <Products />
     </div>
   )
 }

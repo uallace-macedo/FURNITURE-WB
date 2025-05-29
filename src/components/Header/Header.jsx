@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
 import Logo from '../../assets/img/logo.svg';
 
 import { CgMenuRight, CgClose } from 'react-icons/cg';
 import { navigation } from '../../data';
 
 import NavMobile from '../NavMobile';
-
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#">
             <img className='h-6 lg:h-8' src={Logo} alt="" />
           </a>
-          <div onClick={() => setMobileNav(!mobileNav)} className='text-2xl text-white md:hidden cursor-pointer'>
+          <div onClick={() => setMobileNav(!mobileNav)} className={`text-2xl ${mobileNav ? 'text-black xs:text-white' : 'text-white'}  md:hidden cursor-pointer z-20`}>
             {mobileNav ? <CgClose /> : <CgMenuRight />}
           </div>
           <nav className='hidden md:flex'>
@@ -32,7 +32,9 @@ const Header = () => {
               {navigation.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a className='capitalize text-white hover:border-b transition-all' href={item.href}>{item.name}</a>
+                    <Link to={item.name} smooth={true} duration={500} offset={-70} className='capitalize text-white hover:border-b transition-all cursor-pointer'>
+                      {item.name}
+                    </Link>
                   </li>
                 )
               })}

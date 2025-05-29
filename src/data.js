@@ -31,10 +31,10 @@ import Avatar3Img from './assets/img/avatar-3.png';
 import Avatar4Img from './assets/img/avatar-4.png';
 
 export const navigation = [
-  { name: 'home', href: 'home' },
-  { name: 'about', href: 'about' },
-  { name: 'features', href: 'features' },
-  { name: 'contact', href: 'contact' },
+  { name: 'home' },
+  { name: 'features' },
+  { name: 'about' },
+  { name: 'contact' },
 ];
 
 export const hero = {

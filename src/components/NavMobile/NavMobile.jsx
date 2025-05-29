@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { navigation } from '../../data';
 
 const NavMobile = () => {
@@ -6,7 +7,9 @@ const NavMobile = () => {
       <ul className='text-center h-full flex flex-col items-center justify-center gap-y-6'>
         {navigation.map((item, index) => (
           <li key={index}>
-            <a className='select-none capitalize text-xl font-medium' href={item.href}>{item.name}</a>
+            <Link to={item.name} smooth={true} duration={500} offset={-70} className='select-none capitalize text-xl font-medium cursor-pointer'>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

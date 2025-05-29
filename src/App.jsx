@@ -1,3 +1,5 @@
+import { Element } from "react-scroll";
+
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import NewItems from "./components/NewItems";
@@ -10,15 +12,15 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="w-full max-w-[1440px] mx-auto bg-white">
+    <div className="w-full max-w-[1440px] mx-auto bg-white scroll-smooth">
       <Header />
-      <Hero />
-      <Features />
+      <Element name="home"> <Hero /> </Element>
+      <Element name="features"> <Features /> </Element>
       <NewItems />
       <SecondFeatures />
       <Products />
-      <Testimonials />
-      <Newsletter />
+      <Element name="about"> <Testimonials /> </Element>
+      <Element name="contact"> <Newsletter /> </Element>
       <Footer />
     </div>
   )
